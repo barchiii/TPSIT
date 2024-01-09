@@ -15,6 +15,7 @@ e dei numeri dispari (utilizzare %).
 
 #include <stdio.h>
 void main() {
+	
 	// Variable declarations
 	int N, num[30], pari=0, dispari=0, i;
 	int sommaP=0, sommaD=0;
@@ -27,7 +28,7 @@ void main() {
 	} while (N<=0 || N>30);
 
 	// fill the array with the number in the position i
-	for (i=0; i<N; i++) { //inizio for
+	for (i=0; i<N; i++) { // start
 		printf("Inserisci un numero\n");
 		scanf("%d", &num[i]);
 
@@ -41,7 +42,7 @@ void main() {
 			sommaD=sommaD+num[i];
 		}
 
-	} // fine for
+	} // end
 
 	// Final calculations
 	mediaP=sommaP/pari;

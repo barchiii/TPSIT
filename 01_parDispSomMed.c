@@ -6,11 +6,11 @@ e dei numeri dispari (utilizzare %).
 */
 
 /* After reading N numbers (integers), 
-with N chosen by the user 
-and not exceeding 30 elements, 
-calculate the sum and the average 
-of the even numbers 
-and the odd numbers (use %). 
+ with N chosen by the user 
+ and not exceeding 30 elements, 
+ calculate the sum and the average 
+ of the even numbers 
+ and the odd numbers (use %). 
 */
 
 #include <stdio.h>

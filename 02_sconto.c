@@ -8,9 +8,9 @@
 
 /* On a sum of money (related to the purchase of a product), 
 a discount is desired based on the entered amount following the following scheme:
-	- From 0 to 500, a discount of 10%;
-	- From 501 to 1000, a discount of 20%;
-	- Above 1001, a discount of 30%.
+	From 0 to 500, a discount of 10%;
+	From 501 to 1000, a discount of 20%;
+	Above 1001, a discount of 30%.
 The program, after calculating and displaying the discount and net price on the screen, 
 should allow for the re-insertion of additional sums of money. */
 

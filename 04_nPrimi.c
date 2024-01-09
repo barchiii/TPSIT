@@ -1,33 +1,37 @@
+/* Dato un numero N intero positivo, 
+stampare la somma dei primi N numeri primi alternati (uno sì e uno no) */
+
+/* Given a positive integer N, 
+print the sum of the first N prime numbers alternated (one yes, one no). */
+
 #include <stdio.h>
 
-int main()
+void main()
 {
-    int N, somma = 0, num = 2, cont = 0, primo = 0;
+    int N, somma = 0, num = 2, cont = 0, primo = 0, i;
 
-    // Input del numero N
+    // "Input the number N."
     do
     {
         printf("Inserisci un numero intero positivo N: \n");
         scanf("%d", &N);
 
+        // Check
         if (N <= 0)
-            printf("Il numero deve essere positivo. Reinserisci\n");
+            printf("Il numero deve essere positivo. Riprova \n");
         
     } while (N <= 0);
 
-    // Calcolo della somma dei primi numeri primi alternati fino a N
+    // "Calculation of the sum of the first prime numbers alternated up to N."
     while (num <= N)
     {
-        primo = 1; // Assume che il num sia primo
+        primo = 1; // "The number is prime."
 
-        // Verifica se numero_corrente e' divisibile per un numero tra 2 e num-1
-        for (int i = 2; i < num; i++)
+        // "Check if the number is divisible."
+        for (i = 2; i < num; i++)
         {
             if (num % i == 0)
-            {
-                primo = 0; // Se e' divisibile, non e' primo
-                break;
-            }
+                primo = 0;
         }
 
         if (primo==1)
@@ -35,7 +39,7 @@ int main()
             cont++;
             if (cont % 2 == 1)
             {
-                printf("Numero primo alternato: %d\n", num);
+                printf("Il numero primo alternato è: %d\n", num);
                 somma += num;
             }
         }
@@ -43,8 +47,7 @@ int main()
         num++;
     }
 
-    // Stampo la somma
-    printf("La somma dei primi numeri primi alternati fino a %d e': %d\n", N, somma);
+    // Output
+    printf("La somma dei primi numeri primi alternati è: %d\n", N, somma);
 
-    return 0;
 }
